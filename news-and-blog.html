@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franchise News & Blog | Everguard Repellent Pros Franchise</title>
+<meta name="description" content="News and articles for prospective Everguard Repellent Pros franchise owners.">
+<meta name="robots" content="noindex"><!-- PREVIEW -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#F58220; --orange-d:#DC6E0E; --green:#557437; --green-d:#2F4A1F; --green-xd:#1B2C12;
+  --lime:#A8D03A; --ink:#0A090B; --gray:#565759; --light:#F6F6F6; --line:#E6E6E6; --white:#fff;
+  --radius:14px; --shadow:0 18px 50px rgba(10,9,11,.16);
+  --head:'Montserrat',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --body:'Lato',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+/* Reset theme element margins when embedded in WordPress (same specificity as theme rules, later in the cascade) */
+p,ol,ul,address,blockquote,dl,dd,figure,h1,h2,h3,h4,h5,h6,pre,table{margin:0;padding:0}
+small{font-size:smaller}
+h1,h2,h3,h4,h5,h6{color:inherit}
+blockquote{border:0;font-style:normal;quotes:auto}
+select{height:auto;min-height:48px}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);color:var(--ink);line-height:1.6;font-size:17px;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--head);line-height:1.15;letter-spacing:-.01em}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.eyebrow{display:inline-block;font:800 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.section{padding:96px 0}
+.center{text-align:center}
+.h2{font-size:clamp(28px,3.6vw,44px);font-weight:800;margin-bottom:18px}
+.lead{font-size:19px;color:var(--gray);max-width:780px}
+.center .lead{margin:0 auto}
+.ph{background:#FFF4C2;border:1.5px dashed #D9A400;color:#6B5200;padding:0 6px;border-radius:5px;font-weight:700;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 15px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:18px 30px;transition:transform .15s,box-shadow .15s,background .15s}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 10px 24px rgba(245,130,32,.35)}
+.btn-orange:hover{background:var(--orange-d);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-block{width:100%}
+.ic{width:30px;height:30px}
+
+/* Header */
+.topbar{background:var(--green-xd);color:#dfe8d6;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 0;gap:16px}
+.topbar a{text-decoration:none;color:#fff;font-weight:700}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);transition:box-shadow .2s}
+header.site.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.08)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo img{height:52px;width:auto}
+nav.main{display:flex;gap:28px}
+nav.main a{text-decoration:none;font:700 15px var(--head);color:var(--ink)}
+nav.main a:hover{color:var(--orange)}
+.head-cta{display:flex;align-items:center;gap:18px}
+.head-phone{font:800 16px var(--head);text-decoration:none;color:var(--green)}
+header .btn{padding:14px 22px;font-size:13px}
+
+/* Hero */
+.hero{position:relative;color:#fff;background:#0f170b;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-van-hero-1920.jpg') right -70px center/auto 100% no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0f170b 0%,#0f170b 28%,rgba(15,23,11,.6) 40%,rgba(15,23,11,0) 50%),linear-gradient(0deg,rgba(15,23,11,.55) 0%,rgba(15,23,11,0) 22%)}
+.hero-photo{display:none}
+
+.hero-inner{position:relative;min-height:640px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:70px 0}
+.hero-inner > *{max-width:470px}
+.hero h1{font-size:clamp(34px,3.3vw,46px)}
+.btn-lg{padding:20px 38px;font-size:16px}
+/* Check Territory section */
+.apply{background:var(--light)}
+.apply-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:'head form' 'extras form';column-gap:56px;align-items:center;align-content:center}
+.apply-copy{grid-area:head;align-self:end}.apply-extras{grid-area:extras;align-self:start}.apply .form-card{grid-area:form}
+.apply .checks li{color:#222}
+.apply .lead{margin-bottom:26px}
+.apply .g-rating{background:#fff;border-color:var(--line)}
+.apply .g-rating small{color:var(--gray)}
+/* Path steps (compact) */
+.path{margin-top:72px;background:var(--green-xd);color:#fff;border-radius:20px;padding:36px 36px 30px}
+.path h3{font-size:22px;font-weight:800;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.path h3 small{font:800 14px var(--head);color:var(--lime)}
+.path ol{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.path .step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 14px}
+.path .step .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--orange);font:900 14px var(--head);margin-bottom:10px}
+.path .step h3{font-size:15px;margin:0 0 6px;display:block}
+.path .step p{font-size:13.5px;color:#cfd8c6;line-height:1.45}
+.video{max-width:1080px}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(168,208,58,.16);border:1px solid rgba(168,208,58,.5);color:#E4F3B5;font:700 13px var(--head);letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border-radius:999px;margin-bottom:22px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(168,208,58,.25)}
+.hero h1{font-size:clamp(34px,4.6vw,58px);font-weight:900;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .sub{font-size:20px;color:#E5EBDF;max-width:600px;margin-bottom:28px}
+.checks{list-style:none;display:grid;gap:12px;margin-bottom:34px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:17px;color:#F2F5EE}
+.checks li::before{content:"";flex:0 0 22px;height:22px;margin-top:2px;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B2C12' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat}
+.hero-badges{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.hero-badges img.badge{height:84px;width:auto}
+.g-rating{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:12px 16px}
+.g-rating .stars{color:#FBBC04;letter-spacing:2px;font-size:18px}
+.g-rating small{display:block;color:#cfd8c6;font-size:13px}
+
+/* Form */
+.form-card{background:#fff;color:var(--ink);border-radius:18px;box-shadow:var(--shadow);padding:30px 28px;border-top:6px solid var(--orange)}
+.form-title{font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:.01em}
+.form-sub{font-size:14.5px;color:var(--gray);margin:6px 0 18px}
+.lead-form label{display:block;font:700 13px var(--head);color:#2a2a2a;margin-bottom:12px}
+.lead-form input:not([type=checkbox]),.lead-form select{display:block;width:100%;margin-top:6px;font:400 16px var(--body);padding:12px 14px;border:1.5px solid #D5D7D3;border-radius:10px;background:#FAFBF9;color:var(--ink);transition:border-color .15s,box-shadow .15s}
+.lead-form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23565759' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:38px}
+.lead-form input:focus,.lead-form select:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 4px rgba(85,116,55,.15);background:#fff}
+.lead-form .invalid{border-color:#D93025!important;box-shadow:0 0 0 3px rgba(217,48,37,.12)!important}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.consent{display:flex!important;gap:10px;align-items:flex-start;font:400 12px/1.5 var(--body)!important;color:#5d5f5b!important;margin:6px 0 16px!important}
+.consent input{flex:0 0 18px;width:18px;height:18px;margin-top:2px;accent-color:var(--green)}
+.consent.invalid span{color:#D93025}
+.form-disclaimer{margin:12px 0 0;font:400 11.5px/1.5 var(--body);color:#6b6d69;text-align:left}
+.form-msg{font:700 14px var(--head);margin-top:12px;color:var(--green)}
+.form-msg.err{color:#D93025}
+.form-private{font-size:12.5px;color:#777;margin-top:10px;text-align:center}
+.hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.thanks{text-align:center;padding:30px 6px}
+.thanks h3{font-size:26px;margin:14px 0 8px}
+.thanks .ok{width:64px;height:64px;border-radius:50%;background:var(--lime);display:grid;place-items:center;margin:0 auto;font-size:32px;color:var(--green-xd)}
+
+/* Stats */
+.stats{background:var(--ink);color:#fff;padding:56px 0 40px}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{background:#fff;color:var(--ink);border-radius:var(--radius);padding:28px 18px;text-align:center;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--green),var(--lime))}
+.stat b{display:block;white-space:nowrap;font:900 clamp(24px,2.3vw,32px)/1.1 var(--head);color:var(--green-d)}
+.stat span{display:block;margin-top:8px;font:700 14px var(--head);text-transform:uppercase;letter-spacing:.06em;color:var(--gray)}
+.fine{font-size:12.5px;color:#a9aba7;margin-top:22px;line-height:1.55}
+
+/* Intro + video */
+.video{position:relative;max-width:900px;margin:40px auto 0;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:16/9;background:#000;cursor:pointer}
+.video img{width:100%;height:100%;object-fit:cover}
+.video .play{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(0deg,rgba(0,0,0,.45),rgba(0,0,0,.05))}
+.video .play span{width:92px;height:92px;border-radius:50%;background:var(--orange);display:grid;place-items:center;box-shadow:0 0 0 12px rgba(245,130,32,.25);transition:transform .2s}
+.video:hover .play span{transform:scale(1.07)}
+.video .play svg{width:34px;height:34px;margin-left:6px;fill:#fff}
+.video .cap{position:absolute;left:24px;bottom:20px;color:#fff;font:800 15px var(--head);letter-spacing:.08em;text-transform:uppercase}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* Split sections */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+.split .media{background-size:cover;background-position:center;min-height:360px}
+.split .copy{display:flex;flex-direction:column;justify-content:center;padding:72px clamp(28px,6vw,96px)}
+.split .copy h2{font-size:clamp(28px,3.2vw,40px);font-weight:900;margin-bottom:18px}
+.split .copy p{font-size:17.5px;margin-bottom:14px}
+.split.orange .copy{background:var(--orange);color:#fff}
+.split.green .copy{background:var(--green-d);color:#fff}
+.split.white .copy{background:#fff}
+.split.white .copy p{color:#333}
+.split.rev .media{order:2}
+.mini{list-style:none;display:grid;gap:10px;margin-top:10px}
+.mini li{display:flex;gap:10px;align-items:center;font:700 16px var(--head)}
+.mini li::before{content:"";width:10px;height:10px;border-radius:3px;background:currentColor;opacity:.85;transform:rotate(45deg);flex:0 0 10px}
+.season{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+.season div{background:var(--light);border-radius:12px;padding:16px;border-left:5px solid var(--green)}
+.season div:nth-child(2n){border-left-color:var(--orange)}
+.season b{display:block;font:800 16px var(--head);margin-bottom:4px}
+.season small{font-size:14.5px;color:var(--gray);line-height:1.45;display:block}
+
+/* Investment band */
+.invest{background:var(--ink);color:#fff;text-align:center}
+.invest .lead{color:#cfd1cd}
+.inv-card{background:#fff;color:var(--ink);border-radius:20px;max-width:980px;margin:44px auto 0;padding:44px 40px;box-shadow:var(--shadow);text-align:center}
+.inv-card .ic{width:52px;height:52px;color:var(--green);margin:0 auto 10px}
+.inv-card h3{font-size:20px;font-weight:800}
+.inv-range{font:900 clamp(26px,3.6vw,40px)/1.2 var(--head);margin:8px 0 6px}
+.inv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px;border-top:1px solid var(--line);padding-top:28px}
+.inv-grid div{text-align:center}
+.inv-grid small{display:block;font:700 12.5px var(--head);text-transform:uppercase;letter-spacing:.08em;color:var(--gray);margin-bottom:8px}
+.inv-grid strong{font:800 17px var(--head)}
+.inv-incl{margin-top:24px;font-size:15px;color:var(--gray)}
+.req{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1080px;margin:40px auto 0;text-align:left}
+.req div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
+.req b{display:block;font:800 16px var(--head);color:var(--lime);margin-bottom:6px}
+.req p{font-size:15px;color:#d7d9d5}
+
+/* Icon grid */
+.grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:56px 64px;margin-top:56px}
+.feat{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+.feat .ibox{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;background:rgba(85,116,55,.1);color:var(--green)}
+.feat:nth-child(2n) .ibox{background:rgba(245,130,32,.12);color:var(--orange)}
+.feat h3{font-size:21px;font-weight:800;margin-bottom:8px}
+.feat p{color:#444;font-size:16.5px}
+
+/* Programs */
+.programs{background:var(--light)}
+.prog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.prog{background:#fff;border-radius:var(--radius);padding:28px 24px;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+.prog:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.08)}
+.prog .tag{display:inline-block;font:800 11.5px var(--head);letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(85,116,55,.12);color:var(--green-d);margin-bottom:14px}
+.prog .tag.o{background:rgba(245,130,32,.14);color:#A44E00}
+.prog h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.prog p{font-size:15.5px;color:#4a4a4a}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:40px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font:800 14px var(--head);color:var(--green-d)}
+.chips span b{color:var(--orange)}
+
+/* Support */
+.sup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.sup{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:#fff}
+.sup .ic{color:var(--orange);width:38px;height:38px;margin-bottom:14px}
+.sup h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.sup p{font-size:15.5px;color:#4a4a4a}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.member{display:flex;gap:18px;align-items:center;background:var(--light);border-radius:var(--radius);padding:18px}
+.member img{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:center 25%;border:3px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.member b{display:block;font:800 17px var(--head)}
+.member small{display:block;color:var(--gray);font-size:14px;line-height:1.4}
+
+/* Steps */
+.how{background:var(--green-xd);color:#fff;position:relative;overflow:hidden}
+.how .lead{color:#cbd6c1}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;counter-reset:s}
+.step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px 26px}
+.step .num{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--orange);font:900 19px var(--head);margin-bottom:16px}
+.step h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.step p{font-size:15.5px;color:#d3dccb}
+.timeline-note{display:inline-flex;gap:10px;align-items:center;margin-top:36px;background:rgba(168,208,58,.14);border:1px solid rgba(168,208,58,.4);border-radius:999px;padding:12px 22px;font:800 15px var(--head);color:#E4F3B5}
+.timeline-note .ic{width:22px;height:22px}
+
+/* Reviews */
+.rev-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.rev-score{display:flex;align-items:center;justify-content:center;gap:16px}
+.rev-score img{height:34px;width:auto}
+.rev-score .stars{color:#FBBC04;font-size:24px;letter-spacing:3px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;align-items:start}
+.review{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:22px;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+.review .stars{color:#FBBC04;letter-spacing:3px;font-size:18px;margin-bottom:10px}
+.review blockquote{font-size:16px;color:#333;margin-bottom:18px}
+.review figcaption{display:flex;align-items:center;gap:12px}
+.review .avatar{width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font:800 17px var(--head)}
+.review strong{display:block;font:800 15px var(--head)}
+.review small{color:var(--gray);font-size:13px}
+
+/* FAQ */
+.faq-wrap{max-width:900px;margin:44px auto 0}
+.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:#fff;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:22px 64px 22px 24px;font:800 17.5px var(--head);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq .plus{position:absolute;right:22px;top:50%;width:26px;height:26px;margin-top:-13px;border-radius:50%;background:var(--light)}
+.faq .plus::before,.faq .plus::after{content:"";position:absolute;left:7px;right:7px;top:12px;height:2.5px;background:var(--green);border-radius:2px;transition:transform .2s}
+.faq .plus::after{transform:rotate(90deg)}
+.faq[open] .plus::after{transform:rotate(0)}
+.faq[open] summary{color:var(--green-d)}
+.faq-a{padding:0 24px 22px;color:#444}
+.faq-a p+p{margin-top:10px}
+
+/* Final CTA */
+.final{background:linear-gradient(120deg,rgba(10,9,11,.93),rgba(27,44,18,.9)),url('https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-home-service.jpg') center/cover;color:#fff}
+.final .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.final img.logo-w{width:320px;max-width:80%;margin-bottom:30px}
+.final h2{font-size:clamp(28px,3.2vw,40px);font-weight:900;text-transform:uppercase;margin-bottom:18px}
+.final-copy p{color:#d9ddd5;font-size:18px}
+.contact-lines{margin-top:28px;display:grid;gap:10px}
+.contact-lines a{text-decoration:none;font:800 18px var(--head);color:#fff}
+.contact-lines a span{color:var(--lime)}
+
+/* Footer */
+footer{background:#070707;color:#a7a9a5;font-size:14px;padding:52px 0 48px}
+.foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid #222}
+.foot-top img{height:54px;width:auto}
+.foot-top address{font-style:normal;line-height:1.7}
+.foot-top a{color:#fff;text-decoration:none}
+.legal{margin-top:26px;display:grid;gap:12px;font-size:12.5px;line-height:1.6}
+.legal strong{color:#ddd}
+.copy-row{margin-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
+.copy-row a{color:#ccc}
+
+/* Floating CTA: pill bottom-right on desktop, full-width bar on mobile */
+.float-cta{position:fixed;right:24px;bottom:24px;z-index:60;display:flex;gap:10px;opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .25s,transform .25s}
+.float-cta.show{opacity:1;transform:none;pointer-events:auto}
+.float-cta .call{display:none}
+.sm-only{display:none}
+.float-cta .go{padding:18px 28px;box-shadow:0 14px 34px rgba(0,0,0,.28),0 0 0 4px rgba(245,130,32,.25)}
+
+@media (max-width:1024px){
+  nav.main{display:none}
+  .hero-bg{display:none}
+  .hero-inner{min-height:0;align-items:center;text-align:center;padding:64px 0 40px}
+  .hero-inner > *{max-width:720px}
+  .hero .sub{margin-left:auto;margin-right:auto}
+  .hero-photo{display:block;width:100%;height:auto}
+  .apply-grid{grid-template-columns:1fr;grid-template-areas:'head' 'form' 'extras';gap:24px}
+  .apply .lead{margin-bottom:0}
+  .path ol{grid-template-columns:repeat(3,1fr)}
+  .stat-grid,.prog-grid{grid-template-columns:repeat(2,1fr)}
+  .split,.final .wrap{grid-template-columns:1fr}
+  .split.rev .media{order:0}
+  .split .media{min-height:300px}
+  .inv-grid,.req{grid-template-columns:repeat(2,1fr)}
+  .reviews{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .section{padding:64px 0}
+  .topbar .hide-sm{display:none}
+  .topbar .wrap{justify-content:center}
+  header.site .wrap{height:64px}
+  .logo img{height:40px}
+  .head-phone{display:none}
+  header .btn{padding:11px 14px;font-size:11.5px;letter-spacing:.04em}
+  .hero .sub{font-size:17px}
+  .pill{font-size:11px;letter-spacing:.06em;padding:8px 12px}
+  .hero h1{font-size:32px;margin-bottom:14px}
+  .hero-inner{padding:44px 0 32px}
+  .path{padding:26px 18px}
+  .path ol{grid-template-columns:1fr 1fr}
+  .btn-lg{width:100%;padding:18px 16px;font-size:14px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .form-card{padding:24px 18px}
+  .stat-grid{gap:12px}
+  .stat{padding:20px 10px}
+  .stat span{font-size:12px}
+  .stat b{font-size:20px}
+  .inv-range .ph{white-space:normal}
+  .grid4,.sup-grid,.steps,.team,.prog-grid,.inv-grid,.req{grid-template-columns:1fr}
+  .grid4{gap:36px}
+  .split .copy{padding:52px 6%}
+  .inv-card{padding:32px 20px}
+  .hero-badges img.badge{height:68px}
+  footer{padding-bottom:110px}
+  footer{padding-bottom:110px}
+  .float-cta{left:0;right:0;bottom:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);box-shadow:0 -6px 20px rgba(0,0,0,.12);transform:translateY(100%)}
+  .lg-only{display:none}.sm-only{display:inline}
+  .lead-form .btn{font-size:13px;letter-spacing:.03em}
+  .video .cap{font-size:11.5px;left:14px;bottom:12px}
+  .video .play span{width:68px;height:68px}
+  .float-cta .call{display:inline-flex;flex:0 0 auto;background:var(--green);box-shadow:none}
+  .float-cta .go{flex:1;min-width:0;padding:15px 10px;font-size:13px;box-shadow:none}
+}
+/* Bottles photo: keep container close to the cropped image's 1.31:1 ratio so bottles are never cut */
+.split.orange .media{min-height:38vw;background-size:cover}
+@media (max-width:1024px){.split.orange .media{min-height:76vw}}
+/* WordPress WebP plugin wraps <img> in <picture> and moves the class onto <picture>: mirror the img rules */
+picture.hero-photo{display:none}
+.hero-badges picture.badge img{height:84px;width:auto}
+.final picture.logo-w{display:block;width:320px;max-width:80%;margin-bottom:30px}
+.final picture.logo-w img{display:block;width:100%;height:auto}
+@media (max-width:1024px){picture.hero-photo{display:block}picture.hero-photo img{display:block;width:100%;height:auto}}
+@media (max-width:680px){.hero-badges picture.badge img{height:68px}}
+/* Site-wide chat widget (WordPress) sits bottom-right: keep the floating CTA clear of it */
+body:has(chat-widget) .float-cta{right:110px}
+@media (max-width:680px){body:has(chat-widget) .float-cta{right:0;padding-right:86px}}
+/* Booking calendar shown in place of the form after a successful submit */
+.booking-frame{display:block;width:100%;min-height:680px;border:0;overflow:hidden;margin-top:6px}
+body.eg-booking .float-cta{display:none!important}
+.svc-h{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.svc-h b{margin-bottom:0}
+.svc-ic{flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:rgba(85,116,55,.12);color:var(--green);display:grid;place-items:center}
+.svc-ic svg{width:30px;height:30px}
+
+/* ===== Franchise hub mockup additions ===== */
+.hero-inner > *{max-width:600px}
+.hero h1{font-size:clamp(34px,4vw,54px)}
+@media (min-width:1025px){.hero-bg{background-position:right -40px center}}
+.mock-flag{position:fixed;left:12px;bottom:12px;z-index:90;background:#111;color:#fff;font:700 11px var(--head);letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;border-radius:8px;opacity:.75}
+nav.main a.active{color:var(--orange)}
+.menu-btn{display:none;background:none;border:0;width:44px;height:44px;border-radius:10px;cursor:pointer;color:var(--ink)}
+.menu-btn svg{width:26px;height:26px}
+.mnav{display:none}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero .btn-ghost{padding:18px 26px}
+.hero-inner > .hero-ctas{max-width:780px}
+.svc-row{display:flex;gap:10px;flex-wrap:wrap;margin:-6px 0 28px}
+.svc-row span{font:800 12px var(--head);letter-spacing:.1em;text-transform:uppercase;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:999px;color:#fff}
+.fine-short{font-size:12.5px;color:#a9aba7;margin-top:20px;line-height:1.55}
+.fine-short a{color:#d6d8d3}
+.adv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.adv .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;box-shadow:0 6px 20px rgba(10,9,11,.05)}
+.adv .ibox{width:56px;height:56px;border-radius:14px;background:rgba(245,130,32,.12);color:var(--orange);display:grid;place-items:center;margin-bottom:18px}
+.adv h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.adv p{color:var(--gray);font-size:16px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.svc div{background:var(--light);border-radius:14px;padding:20px 18px;border-left:5px solid var(--orange)}
+.svc b{display:block;font:900 18px var(--head);color:var(--green-d);margin-bottom:4px}
+.svc small{color:var(--gray);font-size:14.5px;line-height:1.45;display:block}
+.story{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.story .photo{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:url('https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-home-service.jpg') center/cover}
+.story p{color:var(--gray);margin-bottom:14px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.team .p{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+.team .av{width:52px;height:52px;border-radius:50%;background:var(--green-xd);color:var(--lime);display:grid;place-items:center;font:900 18px var(--head);margin-bottom:14px}
+.team h3{font-size:18px;font-weight:800}
+.team small{display:block;font:800 12px var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:4px 0 10px}
+.team p{font-size:15px;color:var(--gray);line-height:1.5}
+.how{background:var(--green-xd);color:#fff}
+.how .h2{color:#fff}.how .lead{color:#cfd8c6}
+.how .path{margin-top:44px;background:transparent;padding:0}
+.how .path ol{gap:16px}
+.support{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.support div{border-top:3px solid var(--lime);padding-top:16px}
+.support b{display:block;font:800 17px var(--head);margin-bottom:6px}
+.support p{font-size:15px;color:#cfd8c6;line-height:1.5}
+.i19{background:var(--light);color:var(--ink)}
+.i19 .stat{border:1px solid var(--line);box-shadow:0 6px 20px rgba(10,9,11,.05)}
+.i19 .tbl{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.i19-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0 8px}
+.i19-grid .stat b{font-size:clamp(26px,2.6vw,36px)}
+.i19 .tbl{width:100%;border-collapse:collapse;margin-top:26px;font-size:15px}
+.i19 .tbl th,.i19 .tbl td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:right}
+.i19 .tbl th:first-child,.i19 .tbl td:first-child{text-align:left}
+.i19 .tbl th{font:800 12px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--green-d);background:#EEF4E4}
+.i19 .tbl td{font-weight:700}
+.i19 .fine{color:#6b6d69}
+.reviews2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.cand{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.cand span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 16px;font:700 14px var(--head)}
+.more{margin-top:30px;text-align:center}
+.more a{font:800 14px var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--orange);text-decoration:none}
+.cta-band{background:linear-gradient(90deg,rgba(15,23,11,.94) 0%,rgba(15,23,11,.82) 55%,rgba(15,23,11,.55) 100%),url('https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-van-hero-1920.jpg') right center/cover;color:#fff;text-align:center}
+.cta-band img.logo-w{height:66px;width:auto;margin:0 auto 22px}
+.cta-band h2{font-size:clamp(28px,3.6vw,46px);font-weight:900;margin-bottom:14px}
+.cta-band p{color:#dfe7d7;max-width:640px;margin:0 auto 28px;font-size:19px}
+.cta-band .hero-ctas{justify-content:center}
+.cta-band .contact-lines{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.cta-band .contact-lines a{color:#fff;text-decoration:none;font:700 15px var(--head)}
+.foot-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:24px}
+.foot-cols h4{font:800 13px var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin-bottom:12px}
+.foot-cols ul{list-style:none;display:grid;gap:8px}
+.foot-cols a{color:#d9ddd5;text-decoration:none;font-size:15px}
+.foot-cols a:hover{color:#fff}
+.foot-cols img{height:58px;width:auto;margin-bottom:14px}
+.foot-cols address{font-style:normal;color:#b9beb4;font-size:14.5px;line-height:1.7}
+@media (max-width:1024px){
+  .menu-btn{display:grid;place-items:center}
+  .head-cta .head-phone{display:none}
+  .mnav.open{display:block;position:absolute;left:0;right:0;top:76px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.08);padding:10px 4% 18px}
+  .mnav a{display:block;padding:12px 4px;font:700 16px var(--head);text-decoration:none;border-bottom:1px solid var(--line)}
+  .adv,.team{grid-template-columns:1fr}
+  .svc,.support{grid-template-columns:1fr 1fr}
+  .story{grid-template-columns:1fr;gap:28px}
+  .i19-grid{grid-template-columns:1fr}
+  .reviews2{grid-template-columns:1fr}
+  .foot-cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:680px){
+  header .btn{padding:12px 14px;font-size:12px;white-space:nowrap}
+  .head-cta{gap:6px}
+  .svc,.support{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%}
+  .i19 .tbl{font-size:13px}.i19 .tbl th,.i19 .tbl td{padding:10px 6px}
+  .foot-cols{grid-template-columns:1fr}
+}
+
+/* ===== Franchise site (multi-page) additions ===== */
+.head-cta .head-phone{display:none}
+nav.main{gap:22px}
+nav.main a{font-size:14.5px;white-space:nowrap;position:relative}
+nav.main a.active{color:var(--orange)}
+nav.main a.active::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:3px;border-radius:3px;background:var(--orange)}
+nav.main a.mob-only{display:none}
+@media (max-width:1200px){
+  nav.main{display:none}
+  .menu-btn{display:grid!important;place-items:center}
+  .mnav.open{display:block;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.08);padding:10px 4% 18px}
+  .mnav a{display:block;padding:12px 4px;font:700 16px var(--head);text-decoration:none;border-bottom:1px solid var(--line)}
+  .mnav a.active{color:var(--orange)}
+}
+@media (min-width:1201px){.menu-btn{display:none!important}.mnav{display:none!important}}
+/* Page hero */
+.phero{position:relative;color:#fff;background:#0f170b;overflow:hidden}
+.phero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.phero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,23,11,.96) 0%,rgba(15,23,11,.88) 42%,rgba(15,23,11,.45) 100%)}
+.phero .wrap{position:relative;padding:84px 0 88px}
+.phero .crumbs{font:700 12.5px var(--head);letter-spacing:.08em;text-transform:uppercase;color:#b9c6ad;margin-bottom:18px}
+.phero .crumbs a{color:#dfe8d6;text-decoration:none}
+.phero h1{font-size:clamp(32px,4vw,52px);font-weight:900;max-width:760px;margin:0 0 18px}
+.phero h1 em{font-style:normal;color:var(--orange)}
+.phero .sub{font-size:19px;color:#dfe7d7;max-width:640px;margin-bottom:30px}
+.phero .pill{margin-bottom:20px}
+/* generic blocks */
+.split2{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.split2.rev > .media{order:-1}
+.split2 .media{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background-size:cover;background-position:center}
+.split2 p{color:var(--gray);margin-bottom:14px}
+.split2 .h2{margin-bottom:16px}
+.bg-light{background:var(--light)}
+.dark{background:var(--green-xd);color:#fff}
+.dark .h2{color:#fff}.dark .lead,.dark p{color:#cfd8c6}
+.dark .eyebrow{color:var(--lime)}
+.leaders{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.leader{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(10,9,11,.05);display:flex;flex-direction:column}
+.leader .ph{all:unset;display:block;aspect-ratio:1/1;background-size:cover;background-position:center top;background-color:#e9ece6}
+.leader .bd{padding:24px 24px 28px}
+.leader h3{font-size:20px;font-weight:800}
+.leader small{display:block;font:800 12px var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:6px 0 12px}
+.leader p{font-size:15.5px;color:var(--gray);line-height:1.6}
+.numcards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.numcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 26px;box-shadow:0 6px 20px rgba(10,9,11,.05);position:relative}
+.numcard .n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--orange);color:#fff;font:900 16px var(--head);margin-bottom:16px}
+.numcard h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.numcard p{color:var(--gray);font-size:15.5px;line-height:1.55}
+.timeline{list-style:none;margin-top:48px;display:grid;gap:18px;counter-reset:s}
+.tl{display:grid;grid-template-columns:96px 1fr;gap:26px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 30px;box-shadow:0 6px 20px rgba(10,9,11,.05)}
+.tl .n{font:900 46px/1 var(--head);color:var(--orange)}
+.tl .k{display:block;font:800 12px var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:6px}
+.tl h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.tl p{color:var(--gray);font-size:16px}
+.tl a.inl{display:inline-block;margin-top:10px;font:800 13px var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--orange);text-decoration:none}
+.glance{display:grid;grid-template-columns:1fr 1.45fr 1fr 1fr;gap:16px;margin-top:34px}
+.glance div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center}
+.glance small{display:block;font:800 11.5px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-bottom:8px}
+.glance strong{display:block;font:900 clamp(20px,2vw,26px) var(--head);color:var(--green-d)}
+.note{font-size:13px;color:#6b6d69;margin-top:16px;line-height:1.55}
+.faq-layout{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start}
+.facts{position:sticky;top:110px;background:var(--green-xd);color:#fff;border-radius:18px;padding:30px 28px}
+.facts h3{font-size:20px;font-weight:800;margin-bottom:16px}
+.facts dl{display:grid;gap:12px;margin-bottom:24px}
+.facts dt{font:800 11.5px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+.facts dd{font:800 18px var(--head);color:#fff}
+.facts dd small{display:block;font:400 13px var(--body);color:#cfd8c6}
+.facts .btn{width:100%;padding:16px 18px;font-size:13.5px}
+.faq-layout .faq-wrap{margin:0;max-width:none}
+.faq-a ul{margin:8px 0 10px 20px;color:var(--gray)}
+.faq-a li{margin-bottom:6px}
+.faq-a a{color:var(--orange);font-weight:700}
+.map-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow);margin-top:40px}
+.map-card img{width:100%;height:auto;border-radius:10px}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.post{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(10,9,11,.05);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+.post:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.post .th{aspect-ratio:16/9;background-size:cover;background-position:center;background-color:#e9ece6}
+.post .bd{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.post .meta{font:800 11.5px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+.post h3{font-size:18px;font-weight:800;line-height:1.3;margin-bottom:14px;flex:1}
+.post .rd{font:800 13px var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-grid > *,.faq-layout > *,.split2 > *{min-width:0}
+.cinfo{display:grid;gap:14px;margin:28px 0}
+.cinfo a,.cinfo div.ci{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none;color:inherit}
+.cinfo .ibox{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:rgba(245,130,32,.12);color:var(--orange);display:grid;place-items:center}
+.cinfo small{display:block;font:800 11.5px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--gray)}
+.cinfo b{font:800 17px var(--head)}
+.social{display:flex;gap:10px;margin-top:6px}
+.social a{width:42px;height:42px;border-radius:50%;background:var(--green-xd);color:#fff;display:grid;place-items:center}
+.social svg{width:18px;height:18px}
+.mapframe{display:block;width:100%;height:380px;border:0;border-radius:20px;box-shadow:var(--shadow)}
+.foot-cols .social a{background:rgba(255,255,255,.08)}
+@media (max-width:1024px){
+  .split2,.contact-grid,.faq-layout{grid-template-columns:1fr;gap:32px}
+  .split2.rev > .media{order:0}
+  .leaders,.numcards,.posts{grid-template-columns:1fr 1fr}
+  .glance{grid-template-columns:1fr 1fr}
+  .facts{position:static}
+}
+@media (max-width:680px){
+  .phero .wrap{padding:52px 0 56px}
+  .phero .sub{font-size:17px}
+  .leaders,.numcards,.posts,.glance{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr;gap:8px;padding:24px 20px}
+  .tl .n{font-size:34px}
+  .map-card{padding:12px}
+  .mapframe{height:300px}
+}
+</style>
+</head>
+<body>
+<div style="background:#F58220;color:#fff;font:700 12.5px/1.3 Montserrat,Arial,sans-serif;text-align:center;padding:7px 10px;letter-spacing:.04em">PREVIEW, NOT LIVE &middot; Sample redesign of the Everguard franchise site. Forms are disabled.</div>
+<div class="topbar"><div class="wrap">
+  <span class="hide-sm">Franchise opportunities now available across the United States</span>
+  <span>Franchise Development: <a href="tel:+14012065544">401-206-5544</a></span>
+</div></div>
+<header class="site" id="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Everguard Repellent Pros Franchise home"><img src="https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-everguard-logo.png" alt="Everguard Repellent Pros" width="800" height="241"></a>
+    <nav class="main" aria-label="Main"><a href="about.html">About Us</a><a href="process.html">Our Process</a><a href="faq.html">FAQ</a><a href="ideal-candidate.html">Ideal Candidate</a><a href="territories.html">Territories Available</a><a href="news-and-blog.html" class=active>News And Blog</a></nav>
+    <div class="head-cta">
+      <a class="head-phone" href="tel:+14012065544">401-206-5544</a>
+      <a class="btn btn-orange" href="https://everguard-pros.com/franchise/franchise-opportunity/#apply" data-cta="header">Check Territory</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var m=document.getElementById('mnav');m.classList.toggle('open');this.setAttribute('aria-expanded',m.classList.contains('open'))"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Mobile"><a href="about.html">About Us</a><a href="process.html">Our Process</a><a href="faq.html">FAQ</a><a href="ideal-candidate.html">Ideal Candidate</a><a href="territories.html">Territories Available</a><a href="news-and-blog.html" class=active>News And Blog</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+<section class="phero">
+  <div class="bg" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-products-bottles.jpg');background-position:center 70%" role="img" aria-label="Everguard Repellent Pros"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Franchise</a> &nbsp;/&nbsp; News And Blog</div>
+    <h1>Franchise <em>News</em> &amp; Insights</h1>
+    <p class="sub">Guides and articles for prospective owners: costs, the FDD, recurring revenue and what makes an eco-friendly repellent franchise different.</p>
+    
+  </div>
+</section>
+<section class="section bg-light">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Latest Articles</span>
+      <h2 class="h2">From the Everguard Team</h2>
+    </div>
+    <div class="posts"><a class="post" href="https://everguard-pros.com/blog/how-to-read-franchise-disclosure-document-fdd-smart-buyers-2026/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3405_new1-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 25, 2026</div><h3>How to Read an FDD: What Smart Franchise Buyers Look for in 2026</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/exclusive-territories-most-valuable-pest-control-franchise-asset-2026/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3401_new1-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 24, 2026</div><h3>Why Exclusive Territories Are the Most Valuable Franchise Asset in 2026</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/deer-tick-control-year-round-revenue-franchise-owners-2026/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3394_feat_new-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 19, 2026</div><h3>Deer and Tick Control: Year-Round Revenue for Franchise Owners 2026</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/mobile-business-model-advantage-no-storefront-more-profit-2026/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3390_new1-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 18, 2026</div><h3>The Mobile Business Model Advantage: More Profit in 2026</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/recurring-revenue-model-pest-control-franchise/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3334_new1-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 12, 2026</div><h3>The Recurring Revenue Model That Makes Pest Control Franchises So Profitable</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/financial-questions-before-buying-pest-control-franchise-2026/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3329_feat-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 12, 2026</div><h3>5 Financial Questions to Ask Before Buying a Pest Control Franchise in 2026</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/why-eco-friendly-pest-control-franchise-market-booming-2026/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3328_new1-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 12, 2026</div><h3>Why the Eco-Friendly Pest Control Franchise Market Is Booming in 2026</h3><span class="rd">Read article &rarr;</span></div></a><a class="post" href="https://everguard-pros.com/blog/everguard-repellent-pros-franchise-cost-2025/"><div class="th" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2026/07/p3317_new1-768x432.jpg')"></div><div class="bd"><div class="meta">Franchisee Advice &middot; Jun 12, 2026</div><h3>How Much Does an Everguard Repellent Pros Franchise Cost in 2026?</h3><span class="rd">Read article &rarr;</span></div></a></div>
+  </div>
+</section>
+<section class="section cta-band">
+  <div class="wrap">
+    <img class="logo-w" src="https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-everguard-logo-white-fixed.png" alt="Everguard Repellent Pros" loading="lazy">
+    <h2>Ready to See the Numbers?</h2>
+    <p>Check your territory and book a Brand Overview to get the FDD and the full opportunity.</p>
+    <div class="hero-ctas"><a class="btn btn-orange btn-lg" href="https://everguard-pros.com/franchise/franchise-opportunity/#apply" data-cta="band">Check Territory Availability</a></div>
+    <div class="contact-lines"><a href="tel:+14012065544">Call 401-206-5544</a><a href="mailto:franchising@everguard-pros.com">franchising@everguard-pros.com</a></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div>
+        <img src="https://everguard-pros.com/wp-content/uploads/2026/11/eg-lp-everguard-logo-white-fixed.png" alt="Everguard Repellent Pros" loading="lazy">
+        <address><strong style="color:#fff">ADPP Franchising LLC</strong><br>Franchisor of Everguard Repellent Pros<br>567 Liberty Ln, West Kingston, RI 02892<br><a href="tel:+14012065544">401-206-5544</a> &middot; <a href="mailto:franchising@everguard-pros.com">franchising@everguard-pros.com</a></address>
+        <div class="social"><a href="https://www.facebook.com/profile.php?id=61583450362436" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8Z"/></svg></a><a href="https://www.linkedin.com/company/everguard-franchising" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></a></div>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="process.html">Our Process</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Get Started</h4><ul><li><a href="ideal-candidate.html">Ideal Candidate</a></li><li><a href="territories.html">Territories Available</a></li><li><a href="news-and-blog.html">News And Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://everguard-pros.com/franchise/franchise-opportunity/#apply">Check Territory</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <p><strong>This information is not intended as an offer to sell, or the solicitation of an offer to buy, a franchise. It is for information purposes only.</strong></p>
+      <p>Offers are made only through the delivery of a Franchise Disclosure Document (FDD) by ADPP Franchising LLC and in compliance with applicable federal and state franchise laws. Certain states, including California, Hawaii, Illinois, Indiana, Maryland, Michigan, Minnesota, New York, North Dakota, Rhode Island, South Dakota, Virginia, Washington and Wisconsin, regulate the offer and sale of franchises. If you are a resident of, or wish to operate a franchise in, one of these states, we will not offer you a franchise unless and until we have complied with the applicable pre-sale registration and disclosure requirements in your state. As of November 1, 2026, we are not offering franchises in California, Hawaii, Illinois, Kentucky, Louisiana, Maine, Nebraska, North Dakota, South Carolina, South Dakota, Utah or Washington. Our South Carolina filing is pending, and no franchise will be offered or sold to South Carolina residents or for territories located in South Carolina until that filing is effective.</p>
+      <p><strong>New York residents:</strong> This advertisement is not an offering. An offering can only be made by a prospectus filed first with the Department of Law of the State of New York. Such filing does not constitute approval by the Department of Law.</p>
+      <p>Financial performance figures, where shown, are based on Item 19 of our FDD. A new franchisee's results may differ from the represented performance. Each Everguard Repellent Pros franchise is independently owned and operated.</p>
+    </div>
+    <div class="copy-row">
+      <span>&copy; <span id="yr">2026</span> Everguard Repellent Pros. All Rights Reserved.</span>
+      <span><a href="https://everguard-pros.com/privacy-policy/">Privacy Policy</a> &middot; <a href="https://everguard-pros.com/terms-of-service/">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var h=document.querySelector('header.site'); if(h) addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>10)},{passive:true});
+  var v=document.getElementById('video');
+  if(v){ var play=function(){ v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Everguard Repellent Pros Brand Overview" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'; };
+    v.addEventListener('click',play,{once:true}); v.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();play();} }); }
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+})();
+</script>
+
+<div style="position:fixed;left:10px;bottom:10px;z-index:200;background:#111;color:#fff;font:700 11px Montserrat,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:7px;opacity:.8;pointer-events:none">Preview, not live</div>
+</body>
+</html>
