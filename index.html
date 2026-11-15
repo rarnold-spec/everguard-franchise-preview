@@ -449,6 +449,16 @@ nav.main a.active{color:var(--orange)}
 
 /* ===== Franchise site (multi-page) additions ===== */
 .head-cta .head-phone{display:none}
+/* Video hero (hub only) */
+.vhero .hero-bg{display:none}
+.vhero .hero-photo,.vhero picture.hero-photo{display:none!important}
+.vhero .vbg{position:absolute;inset:0;overflow:hidden;background:#0f170b center/cover no-repeat}
+.vhero .vbg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vhero .vbg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,23,11,.94) 0%,rgba(15,23,11,.82) 38%,rgba(15,23,11,.45) 70%,rgba(15,23,11,.25) 100%),linear-gradient(0deg,rgba(15,23,11,.65) 0%,rgba(15,23,11,0) 30%)}
+.vhero .hero-inner{min-height:660px}
+@media (max-width:1024px){.vhero .hero-inner{min-height:600px;padding:64px 0 56px}.vhero .vbg::after{background:linear-gradient(0deg,rgba(15,23,11,.9) 0%,rgba(15,23,11,.72) 50%,rgba(15,23,11,.6) 100%)}}
+@media (prefers-reduced-motion: reduce){.vhero .vbg video{display:none}}
+
 .team .av.av-ph{width:76px;height:76px;background-size:cover;background-position:center 30%;background-color:#e9ece6;border:3px solid #fff;box-shadow:0 6px 16px rgba(10,9,11,.12)}
 nav.main{gap:22px}
 nav.main a{font-size:14.5px;white-space:nowrap;position:relative}
@@ -581,9 +591,9 @@ nav.main a.mob-only{display:none}
 </header>
 <main>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg" role="img" aria-label="Everguard Repellent Pros branded service van"></div>
+<!-- HERO (video) -->
+<section class="hero vhero">
+  <div class="vbg" style="background-image:url('everguard-franchise-hero-poster.jpg')"><video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="everguard-franchise-hero-poster.jpg" aria-hidden="true" tabindex="-1"><source src="everguard-franchise-hero-720p.mp4" type="video/mp4"></video></div>
   <div class="wrap hero-inner">
     <span class="pill"><i></i>Franchise Opportunity &middot; Since 2006</span>
     <h1>Launch Your <em>Eco-Friendly</em> Repellent Service Franchise</h1>
@@ -768,7 +778,7 @@ nav.main a.mob-only{display:none}
     <div class="hero-ctas"><a class="btn btn-orange btn-lg" href="https://everguard-pros.com/franchise/franchise-opportunity/#apply" data-cta="band">Check Territory Availability</a></div>
     <div class="contact-lines"><a href="tel:+14012065544">Call 401-206-5544</a><a href="mailto:franchising@everguard-pros.com">franchising@everguard-pros.com</a></div>
   </div>
-</section>
+</section><script>(function(){var v=document.getElementById('hero-video');if(!v)return;var mq=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)');function apply(){if(mq&&mq.matches){v.removeAttribute('autoplay');v.preload='none';try{v.pause()}catch(e){}}else{var p=v.play();if(p&&p.catch)p.catch(function(){});}}apply();if(mq&&mq.addEventListener)mq.addEventListener('change',apply);})();</script>
 </main>
 <footer>
   <div class="wrap">
