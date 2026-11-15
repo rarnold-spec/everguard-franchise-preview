@@ -449,6 +449,7 @@ nav.main a.active{color:var(--orange)}
 
 /* ===== Franchise site (multi-page) additions ===== */
 .head-cta .head-phone{display:none}
+.team .av.av-ph{width:76px;height:76px;background-size:cover;background-position:center 30%;background-color:#e9ece6;border:3px solid #fff;box-shadow:0 6px 16px rgba(10,9,11,.12)}
 nav.main{gap:22px}
 nav.main a{font-size:14.5px;white-space:nowrap;position:relative}
 nav.main a.active{color:var(--orange)}
@@ -485,7 +486,8 @@ nav.main a.mob-only{display:none}
 .dark .eyebrow{color:var(--lime)}
 .leaders{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
 .leader{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(10,9,11,.05);display:flex;flex-direction:column}
-.leader .ph{all:unset;display:block;aspect-ratio:1/1;background-size:cover;background-position:center top;background-color:#e9ece6}
+.leader .phw{display:grid;place-items:center;padding:34px 0 26px;background:linear-gradient(160deg,#EEF4E4 0%,#F6F6F6 100%);border-bottom:1px solid var(--line)}
+.leader .ph{all:unset;display:block;width:200px;height:200px;border-radius:50%;background-size:cover;background-position:center 30%;background-color:#e9ece6;border:6px solid #fff;box-shadow:0 10px 26px rgba(10,9,11,.14)}
 .leader .bd{padding:24px 24px 28px}
 .leader h3{font-size:20px;font-weight:800}
 .leader small{display:block;font:800 12px var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:6px 0 12px}
@@ -620,9 +622,9 @@ nav.main a.mob-only{display:none}
       <p class="lead">Product innovation from the founder, paired with franchise leaders who have scaled a national brand.</p>
     </div>
     <div class="leaders">
-      <div class="leader"><span class="ph" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2025/11/Mike-Headshot-a-300x272.jpg')" role="img" aria-label="Michael Gaunya"></span><div class="bd"><h3>Michael Gaunya</h3><small>Founder &amp; CEO</small><p>The founder and inventor behind Everguard&rsquo;s product line, and the driving force behind the brand&rsquo;s mission to deliver safe, effective, eco-friendly protection for people, pets and landscapes. His leadership and hands-on expertise are central to the business strategy and the continued growth of the franchise.</p></div></div>
-      <div class="leader"><span class="ph" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2025/11/Rob-Headshot-plain-square-300x300.jpg')" role="img" aria-label="Robert Arnold"></span><div class="bd"><h3>Robert Arnold</h3><small>Managing Partner &middot; Franchise Development</small><p>Founder and former CEO of Launch Franchising, which grew from a single family entertainment center into a nationally recognized franchise with locations across the United States. His experience in franchise operations, brand development and multi-unit growth has shaped the Everguard franchise model.</p></div></div>
-      <div class="leader"><span class="ph" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-11.25.46-AM-300x249.png')" role="img" aria-label="Derek Charello"></span><div class="bd"><h3>Derek Charello, MBA</h3><small>Head of Business Development</small><p>A key executive at Launch, Derek standardized procedures, streamlined franchise onboarding and drove consistent performance across locations nationwide. He translates complex business systems into clear, repeatable processes so new owners can launch efficiently and operate with confidence.</p></div></div>
+      <div class="leader"><div class="phw"><span class="ph" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2025/11/Mike-Headshot-a-300x272.jpg')" role="img" aria-label="Michael Gaunya"></span></div><div class="bd"><h3>Michael Gaunya</h3><small>Founder &amp; CEO</small><p>The founder and inventor behind Everguard&rsquo;s product line, and the driving force behind the brand&rsquo;s mission to deliver safe, effective, eco-friendly protection for people, pets and landscapes. His leadership and hands-on expertise are central to the business strategy and the continued growth of the franchise.</p></div></div>
+      <div class="leader"><div class="phw"><span class="ph" style="background-image:url('rob-arnold-headshot.png')" role="img" aria-label="Robert Arnold"></span></div><div class="bd"><h3>Robert Arnold</h3><small>Managing Partner &middot; Franchise Development</small><p>Founder and former CEO of Launch Franchising, which grew from a single family entertainment center into a nationally recognized franchise with locations across the United States. His experience in franchise operations, brand development and multi-unit growth has shaped the Everguard franchise model.</p></div></div>
+      <div class="leader"><div class="phw"><span class="ph" style="background-image:url('https://everguard-pros.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-11.25.46-AM-300x249.png')" role="img" aria-label="Derek Charello"></span></div><div class="bd"><h3>Derek Charello, MBA</h3><small>Head of Business Development</small><p>A key executive at Launch, Derek standardized procedures, streamlined franchise onboarding and drove consistent performance across locations nationwide. He translates complex business systems into clear, repeatable processes so new owners can launch efficiently and operate with confidence.</p></div></div>
     </div>
   </div>
 </section>
